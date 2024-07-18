@@ -1,0 +1,21 @@
+Package manager does not support provided oppurtunities of installation because Mint only supports .deb packages.
+  Here is how to overcome this barrier through conversion of .rpm to .deb and install kuro. 
+
+1. Firstly, download the .rpm formatted version of kuro
+
+2. Secondly, download needed tools for conversion of .rpm to .deb 
+  To do this use these commands in Linux Mint terminal:
+  
+$ sudo apt install alien dpkg-dev debhelper build-essential
+
+3. Third step: Convert .rpm to .deb by using this command: 
+
+$ sudo alien packagename.rpm
+
+  Last step: Installing kuro!
+
+$ sudo dpkg -i packagename.deb
+
+    Time to be productive.
+
+You are done now! Congratulations! Have fun. 
